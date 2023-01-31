@@ -1,4 +1,3 @@
-<<<<<<< main
 # Getting Started with CodeForSacramento Projects (Windows, VS Code)
 Prerequisites<br>
 1. [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)<br>
