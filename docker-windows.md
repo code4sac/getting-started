@@ -3,6 +3,8 @@
 1. [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)<br>
 2. [Docker for Windows](https://www.docker.com/products/docker-desktop/)
 
+## Setting up the WSL environment
+
 When you are done installing WSL, and Docker, open WSL. Make sure that you are running WSL2, by using opening your Command Prompt terminal and typing this command: 
 
 ```wsl -l -v```
