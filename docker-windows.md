@@ -43,32 +43,30 @@ Example:
  
  When it's completed, open a separate terminal. Again, cd into the folder of choice. For the trash-ai, ```cd trash-ai/```
  
-**Before you move to the next step, make sure that you have an SSH key, and you know your “passphrase”.** 
+If you have made it this far, you have successfully setup docker and it is working properly.  However, you may need the following additional steps to setup git.
+ 
+Check if you have an existing SSH key, and if you know the password to it
 
-First thing you want to do is to check whether any changes to the code will be fetched or pushed to the right repository on GitHub. 
-1. ```git remote -v```
-2. If the repo is “codeForSac”, it needs to be changed to yours.  
-3. To do that, you’d need an **SSH key**.
-4. The SSH code below is for reference only, it’s an example of what would you see if you didn’t have an SSH key
+`ssh-keygen -y -f ~/.ssh/id_rsa | less`
 
-![image](https://user-images.githubusercontent.com/97710680/214155615-8cb12e65-f734-4746-8bef-d7d4585d580d.png)
+If you see were able to see the key, press q and skip the Generate an SSH Key steps below.
 
-To create an SSH key, you’d have to type the following command: 
-```cat ~/.ssh/if_rsa.pub```
+## Generate an SSH Key
 
-And it should look like this:
+1. Move any existing keys if there are any
 
-![image](https://user-images.githubusercontent.com/97710680/214155858-0538c195-d3bd-45aa-8b73-89441737b000.png)
+`mv ~/.ssh/id_rsa ~/.ssh/id_rsa.bak`
+`mv ~/.ssh/id_rsa.pub ~/.ssh/id_rsa.pub.bak`
 
-![image](https://user-images.githubusercontent.com/97710680/214155923-1c01bb4b-ccc3-4c81-8a8e-f072fedfe37b.png)
+2. Follow the [Github Guide for generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)
 
-Next step is to check out the “git pull origin production”.
 
-If it looks okay, meaning that changes are going to be implemented to your GitHub repo, go ahead and create a branch: ```git checkout -b deleteAbout``` (to make changes to that branch instead of the main repo).
 
-You may be asked about get asked about your GitHub email and name, whatever name and email you used to sign up with GitHut 
+## Setup Git
 
-![image](https://user-images.githubusercontent.com/97710680/214156202-a71dc02b-55c4-420a-90fa-7c1c7d2ddfda.png)
+1. Follow the [Github Guide for Adding a new SSH key to your Github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+2. `git config --global user.email "you@example.com"`
+3. `git config --global user.name "Your Name"`
 
 Hopefully, by this line, you should be good to go 😀
 
