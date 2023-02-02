@@ -1,5 +1,5 @@
 # Getting Started with CodeForSacramento Projects (Windows, VS Code)
-Prerequisites<br>
+## Prerequisites
 1. [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)<br>
 2. [Docker for Windows](https://www.docker.com/products/docker-desktop/)
 
