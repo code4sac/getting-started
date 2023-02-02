@@ -23,6 +23,7 @@ Type the following commands (without the parenthesis and their content, explanat
 2. ```cd codeForSac/``` (takes you to the CodeForSac folder).
 3. ```code .```
 
+** Note: it is important to clone any projects into the ~/ path inside of WSL, and not clone projects into a normal windows path.
 The finished product should look something like this: 
 
 <img src="https://i.imgur.com/3HVQBPX.jpg"/>
